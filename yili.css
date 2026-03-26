@@ -40,7 +40,7 @@ body {
 .menu {
     position: fixed;
     width: 100%;
-    height: clamp(50px, 7vw, 150px);
+    height: clamp(80px, 7vw, 150px);
     background-color: hsl(0, 0%, 100%);
     padding: 1vw 4vw;
     z-index: 1000;
