@@ -80,7 +80,7 @@ body {
 
 .button > span {
     display: block;
-    font-size: 0.8vw;
+    font-size: clamp(9px, 0.8vw, 16px);
     margin-top: 2px;
     color: rgb(101, 101, 101);
 }
