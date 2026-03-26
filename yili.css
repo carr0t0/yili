@@ -35,6 +35,9 @@ body {
 /* 메뉴 */
 .menu {
     position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     width: 100%;
     height: clamp(50px, 7vw, 150px);
     background-color: hsl(0, 0%, 100%);
@@ -127,7 +130,7 @@ body {
 
 .header, .main  {
     height: auto;
-    padding-top: 10vw;
+    padding-top: 15vw;
     padding-left: clamp(20px, 8vw, 280px);
 }
 
