@@ -2,6 +2,24 @@ ul, ol, li {
   list-style: none;
   padding: 0;
 }
+
+button {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border: none;
+    background: none;
+    font: inherit;
+}
+
+
+/* 메뉴--초기화 */
+
+
+
+
+
+
 body {
     margin: 0;
     font-family:
