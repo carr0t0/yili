@@ -100,7 +100,7 @@ body {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
          .button, .btn_A > .button {
         font-size: 0.7rem;
     }
