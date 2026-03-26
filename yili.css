@@ -12,6 +12,14 @@ button {
     font: inherit;
 }
 
+h1, li, .button
+     {
+    -webkit-user-select: none; /* Chrome, Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* IE/Edge */
+    user-select: none;         /* 표준 */
+}
+
 
 /* 메뉴--초기화 */
 
@@ -31,9 +39,6 @@ body {
 /* 메뉴 */
 .menu {
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     width: 100%;
     height: clamp(50px, 7vw, 150px);
     background-color: hsl(0, 0%, 100%);
@@ -46,8 +51,13 @@ body {
     box-sizing: border-box;
 }
 
-.menu button {
-    width: 9vw;
+.btn_A, .btn_B {
+    display: flex;
+    gap: 10px;   
+}
+
+.button {
+    width: 7vw;
     padding: 10px 10px;
     border: 2px solid #ccc;
     border-radius: 10px;
@@ -55,10 +65,12 @@ body {
     cursor: pointer;
     background: #fff;
     margin: clamp(2px, 0.2vw, 5px);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-
-.menu > .btn_A > button{
-    width: clamp(3vw, 6vw, 6vw);
+.btn_A > .button{
+    width: 6vw;
     padding: 5px 5px;
     border: 2px solid #ccc;
     border-radius: 40px;
@@ -67,33 +79,31 @@ body {
     background: #fff;
 } 
 
-.menu button span {
+.button > span {
     display: block;
     font-size: 0.8vw;
     margin-top: 2px;
     color: rgb(101, 101, 101);
 }
 
-.menu > .btn_A > button > span {
+.btn_A > .button > span {
     margin-top: -2px;
 }
 
-.menu button:hover {
+.button:hover {
     border: 2px solid #a5a5a5;
 }
 
 
-@media (max-width: 600px) {
-    .menu button,
-    .menu > .btn_A > button {
-        font-size: 0.8rem;
+@media (max-width: 1100px) {
+         .button, .button > span {
+        font-size: 0.9rem;
     }
 }
 
-@media (max-width: 480px) {
-    .menu button,
-    .menu > .btn_A > button {
-        font-size: 0.5rem;
+@media (max-width: 600px) {
+         .button, .button > span {
+        font-size: 0.7rem;
     }
 }
 
@@ -126,8 +136,9 @@ body {
 
 .header, .main  {
     height: auto;
-    padding-top: 15vw;
+    padding-top: clamp(50px, 30vw, 150px);
     padding-left: clamp(20px, 8vw, 280px);
+    overflow: hidden;
 }
 
 h1 {
@@ -297,6 +308,11 @@ li {
     height: 35vw;
     overflow: hidden;
     margin-top: 2vw;
-
 }
 
+.type_svg {
+    width: 120%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-10%);
+}

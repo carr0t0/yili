@@ -9,8 +9,8 @@ document.getElementById("type_B").addEventListener("click", () => {
 });
 
 
-const resetBtn = document.querySelector(".bg-reset");
-const randomBtn = document.querySelector(".bg-random");
+const resetBtn = document.querySelector("#bg-reset");
+const randomBtn = document.querySelector("#bg-random");
 
 // 랜덤 색 함수
 function randomColor() {
